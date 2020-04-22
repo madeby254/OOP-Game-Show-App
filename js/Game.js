@@ -10,12 +10,12 @@ class Game {
 	}
 	// Selects random phrase from phrases
 	getRandomPhrase() {
-		var randomPhrase = this.phrases[Math.floor(Math.random() * this.phrases.length)];
+		let randomPhrase = this.phrases[Math.floor(Math.random() * this.phrases.length)];
 		return randomPhrase;
 	};
 	// Create phrases
 	createPhrases() {
-		var phrase = [new Phrase("Hi I AM DAVE")
+		let phrase = [new Phrase("Hi I AM DAVE")
 			, new Phrase("If you smell what the rock is cooking")
 			, new Phrase("Bye keisha")
 			, new Phrase("WHO let the dogs out")
@@ -33,8 +33,8 @@ class Game {
 	}
 	// Check if game is won
 	checkForWin() {
-		var liElements = document.querySelectorAll('#phrase li');
-		var sentinal = true;
+		let liElements = document.querySelectorAll('#phrase li');
+		let sentinal = true;
 		for (let i = 0; i < liElements.length; i++) {
 			if (!(liElements[i].className == "show letter" || liElements[i].className == "space")) {
 				sentinal = false;
@@ -55,8 +55,8 @@ class Game {
 	};
 	// Displays a message when game is Over
 	gameOver(gameWon) {
-		var messageElement = document.getElementById("game-over-message");
-		var overlayElement = document.getElementById('overlay');
+		let messageElement = document.getElementById("game-over-message");
+		let overlayElement = document.getElementById('overlay');
 		overlayElement.style.display = 'block';
 		if (gameWon) {
 			//if game is won
@@ -73,7 +73,7 @@ class Game {
 			messageElement.innerHTML = "Sorry How about another try!";
 			messageElement.style.color = '#D94545';
 			messageElement.style.backgroundImage = 'none';
-			var image = document.getElementsByClassName('start')[0];
+			let image = document.getElementsByClassName('start')[0];
 			document.getElementById('game-over-message')
 				.style.backgroundColor = '#000000';
 			overlayElement.style.backgroundImage = "url('images/GameOver.gif')";
@@ -82,7 +82,7 @@ class Game {
     }
   // call gameOver method and game is won
 	handleInteraction(button) {
-		var letter = button.textContent;
+		let letter = button.textContent;
 		button.disabled = true;
 		if (this.activePhrase.checkLetter(letter)) {
 			this.activePhrase.showMatchedLetter(letter);
@@ -99,7 +99,7 @@ class Game {
     //checkForWin method true, call gameOver method and game is won
 	resetGameboard() {
 		this.missed = 0;
-		var liElements = document.querySelectorAll('#phrase ul');
+		let liElements = document.querySelectorAll('#phrase ul');
 		let listItems = document.getElementsByClassName("tries");
 		liElements[0].innerHTML = " ";
 		let keys = document.getElementsByClassName("key");
