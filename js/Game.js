@@ -13,11 +13,7 @@ class Game {
 		var randomPhrase = this.phrases[Math.floor(Math.random() * this.phrases.length)];
 		return randomPhrase;
 	};
-	/**
-	 * Creates phrases for use in game
-	 * @return {array} An array of phrases that could be used in the game
-	 */
-	//method create phrases contains variable phrase which holds the arrays each with new Phrase object
+	// Create phrases
 	createPhrases() {
 		var phrase = [new Phrase("Hi I AM DAVE")
 			, new Phrase("If you smell what the rock is cooking")
