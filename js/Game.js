@@ -71,7 +71,7 @@ class Game {
 			//if game won is false, implement these content and style changes
 			messageElement.className += 'lose';
 			messageElement.innerHTML = "Do not look at the code thats cheating";
-			messageElement.style.color = '#8A2BE2';
+			messageElement.style.color = '#345830';
 			messageElement.style.backgroundImage = 'none';
 			var image = document.getElementsByClassName('start')[0];
 			document.getElementById('game-over-message')
