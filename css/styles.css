@@ -10,7 +10,7 @@
   --color-neutral: #445069;
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
-  --color-keys-light: #E5E5E5;
+  --color-keys-light: #F0F3BD;
   --font-size-large: 60px;
   --font-size-medium: 20px;
   --transition: all .2s ease-in-out;
@@ -21,6 +21,10 @@
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  background-image: url("../images/Matte.jpg");
 }
 
 
@@ -89,8 +93,10 @@ button {
 /* Title */
 
 .header {
-  color: #3a3f58;
+  color: #F0F3BD;
 }
+
+
 
 
 /* Phrase */
@@ -169,6 +175,7 @@ button {
   display: flex;
   flex-direction: column;
   position: fixed;
+  background-image: url(../images/Phrase.jpg);
   color: #FFFFFF;
   justify-content: center;
   top: 0;
@@ -179,15 +186,15 @@ button {
 }
 
 .title {
-  color: #FFF;
+  color: #ff3503
 }
 
 .start {
-  background-color: #3a3f58;
+  background-color: #ffffff;
 }
 
 .start a {
-  color: #fff;
+  color: #05668D;
 }
 
 .win {
