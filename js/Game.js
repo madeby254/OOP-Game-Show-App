@@ -19,7 +19,7 @@ class Game {
 			, new Phrase("If you smell what the rock is cooking")
 			, new Phrase("Bye keisha")
 			, new Phrase("WHO let the dogs out")
-			, new Phrase("we are in kansas")
+			, new Phrase("we are not in kansas anymore")
 		];
 		return phrase;
 	}
@@ -70,8 +70,8 @@ class Game {
 		} else {
 			//if game is lost 
 			messageElement.className += 'lose';
-			messageElement.innerHTML = "Do not look at the code thats cheating";
-			messageElement.style.color = '#FFF';
+			messageElement.innerHTML = "Sorry How about another try!";
+			messageElement.style.color = '#D94545';
 			messageElement.style.backgroundImage = 'none';
 			var image = document.getElementsByClassName('start')[0];
 			document.getElementById('game-over-message')
