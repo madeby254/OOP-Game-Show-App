@@ -1,6 +1,8 @@
 /* Treehouse FSJS Techdegree
  * Project 4 - OOP Game App
  * Game.js */
+
+ 
 //track the number of missed guesses by the player
 class Game {
 	constructor() {
