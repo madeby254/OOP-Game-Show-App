@@ -33,10 +33,8 @@ class Game {
 	}
 	// Check if game is won
 	checkForWin() {
-		//select all list items which include letters of current phrase
 		var liElements = document.querySelectorAll('#phrase li');
 		var sentinal = true;
-		//for loop-if letter does not have class name show letter or space, win is false
 		for (let i = 0; i < liElements.length; i++) {
 			if (!(liElements[i].className == "show letter" || liElements[i].className == "space")) {
 				sentinal = false;
