@@ -55,20 +55,18 @@ class Game {
 	};
 	// Displays a message when game is Over
 	gameOver(gameWon) {
-		//variable messageElement targets h1 html element
 		var messageElement = document.getElementById("game-over-message");
-		//variable targets div html element
 		var overlayElement = document.getElementById('overlay');
 		overlayElement.style.display = 'block';
 		if (gameWon) {
 			//if game won is true, implement these content and style changes
 			messageElement.className += 'win';
-			messageElement.innerHTML = "You want a cookie now!";
-			messageElement.style.color = '#FFFFFF';
+			messageElement.innerHTML = "Well Done you won. You want a cookie now!";
+			messageElement.style.color = '#';
 			messageElement.style.backgroundColor = '#7BCE85';
-			messageElement.style.backgroundImage = "url('images/balloons.gif')";
+			messageElement.style.backgroundImage = "url('images/cookies.gif')";
 			overlayElement.style.backgroundColor = '#7BCE85';
-			overlayElement.style.backgroundImage = "url('images/balloons.gif')";
+			overlayElement.style.backgroundImage = "url('images/cookies.gif')";
 		} else {
 			//if game won is false, implement these content and style changes
 			messageElement.className += 'lose';
