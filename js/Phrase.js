@@ -27,16 +27,12 @@ class Phrase {
 	}
 	// Checks if passed letter is in phrase
 	checkLetter(letter) {
-		//checks if parameter letter is in phrase, returns more than -1 if true, -1 if false
 		if (this.phrase.indexOf(letter) > -1) {
 			return true;
 		}
 		return false;
 	}
-	/**
-	 * Displays passed letter on screen after a match is found
-	 * @param (string) letter - Letter to display
-	 */
+	// Display letter on screen if there is a match
 	showMatchedLetter(letter) {
 		//variable liElements holds node list array of the li elements and their properties
 		var liElements = document.querySelectorAll('#phrase li');
