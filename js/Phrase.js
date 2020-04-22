@@ -36,7 +36,6 @@ class Phrase {
 	showMatchedLetter(letter) {
 		//variable liElements holds node list array of the li elements and their properties
 		var liElements = document.querySelectorAll('#phrase li');
-		//loop iterating through array, i being number of loops
 		for (var i = 0; i < liElements.length; i++) {
 			if (liElements[i].innerHTML === letter) {
 				liElements[i].className = "show letter";
