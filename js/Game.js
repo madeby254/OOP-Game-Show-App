@@ -21,8 +21,6 @@ class Game {
 			, new Phrase("WHO let the dogs out")
 			, new Phrase("we are in kansas")
 		];
-		//var phrase = [];
-		//phrase.push(new Phrase("Looks like we have got another mystery on our hands"));
 		return phrase;
 	}
 	/**
