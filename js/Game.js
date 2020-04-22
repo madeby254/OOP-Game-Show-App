@@ -59,7 +59,7 @@ class Game {
 		var overlayElement = document.getElementById('overlay');
 		overlayElement.style.display = 'block';
 		if (gameWon) {
-			//if game won is true, implement these content and style changes
+			//if game is won
 			messageElement.className += 'win';
 			messageElement.innerHTML = "Well Done you won. You get cookies YAAYYY!!";
 			messageElement.style.color = '#1E1B18';
@@ -68,7 +68,7 @@ class Game {
 			overlayElement.style.backgroundColor = '#1E3F20';
 			overlayElement.style.backgroundImage = "url('images/cookies.gif')";
 		} else {
-			//if game won is false, implement these content and style changes
+			//if game is lost 
 			messageElement.className += 'lose';
 			messageElement.innerHTML = "Do not look at the code thats cheating";
 			messageElement.style.color = '#FFF';
@@ -94,20 +94,15 @@ class Game {
 			this.removeLife();
 			button.classList.add('wrong');
 		}
-	}
+    }
+    
+    //checkForWin method true, call gameOver method and game is won
 	resetGameboard() {
-		//missed is set to 0
 		this.missed = 0;
-		//variable liElements is used to select current phrase letter elements
 		var liElements = document.querySelectorAll('#phrase ul');
-		//variable listItems selects the elements containing heart icon
 		let listItems = document.getElementsByClassName("tries");
-		//liElements variable used to clear the content of the current phrase
 		liElements[0].innerHTML = " ";
-		//keys variable equals elements of screen keyboard
 		let keys = document.getElementsByClassName("key");
-		//for loop loops through keyboard elements, and if they have class name
-		//wrong or chosen, the key will be enabled and remove these classes
 		for (let j = 0; j < keys.length; j++) {
 			if (keys[j].classList.contains('wrong') || keys[j].classList.contains('chosen')) {
 				keys[j].disabled = false;
