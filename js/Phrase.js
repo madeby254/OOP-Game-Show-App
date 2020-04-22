@@ -12,7 +12,7 @@ class Phrase {
 	 
 	addPhraseToDisplay() {
 		for (let i = 0; i < this.phrase.length; i++) {
-			var li = document.createElement("li");
+			let li = document.createElement("li");
             li.innerHTML = this.phrase[i];
             
 			if (this.phrase[i] === " ") {
@@ -34,9 +34,9 @@ class Phrase {
 	}
 	// Display letter on screen if there is a match
 	showMatchedLetter(letter) {
-		//variable liElements holds node list array of the li elements and their properties
-		var liElements = document.querySelectorAll('#phrase li');
-		for (var i = 0; i < liElements.length; i++) {
+		//letiable liElements holds node list array of the li elements and their properties
+		let liElements = document.querySelectorAll('#phrase li');
+		for (let i = 0; i < liElements.length; i++) {
 			if (liElements[i].innerHTML === letter) {
 				liElements[i].className = "show letter";
 			}

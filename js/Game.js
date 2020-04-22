@@ -21,7 +21,7 @@ class Game {
 			, new Phrase("If you smell what the rock is cooking")
 			, new Phrase("Bye keisha")
 			, new Phrase("WHO let the dogs out")
-			, new Phrase("we are not in kansas anymore")
+			, new Phrase("ILL be back")
 		];
 		return phrase;
 	}
