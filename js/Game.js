@@ -61,11 +61,11 @@ class Game {
 		if (gameWon) {
 			//if game won is true, implement these content and style changes
 			messageElement.className += 'win';
-			messageElement.innerHTML = "Well Done you won. You want a cookie now!";
-			messageElement.style.color = '#';
-			messageElement.style.backgroundColor = '#7BCE85';
+			messageElement.innerHTML = "Well Done you won. You get cookies YAAYYY!!";
+			messageElement.style.color = '#1E1B18';
+			messageElement.style.backgroundColor = '#1E3F20';
 			messageElement.style.backgroundImage = "url('images/cookies.gif')";
-			overlayElement.style.backgroundColor = '#7BCE85';
+			overlayElement.style.backgroundColor = '#1E3F20';
 			overlayElement.style.backgroundImage = "url('images/cookies.gif')";
 		} else {
 			//if game won is false, implement these content and style changes
@@ -76,7 +76,7 @@ class Game {
 			var image = document.getElementsByClassName('start')[0];
 			document.getElementById('game-over-message')
 				.style.backgroundColor = '#000000';
-			overlayElement.style.backgroundImage = "url('images/skull.gif')";
+			overlayElement.style.backgroundImage = "url('images/GameOver.gif')";
 			overlayElement.style.backgroundColor = '#000000';
 		}
 	}
