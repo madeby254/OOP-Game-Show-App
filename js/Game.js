@@ -79,22 +79,17 @@ class Game {
 			overlayElement.style.backgroundImage = "url('images/GameOver.gif')";
 			overlayElement.style.backgroundColor = '#000000';
 		}
-	}
+    }
+  // call gameOver method and game is won
 	handleInteraction(button) {
-		//access text content of button/event.target and assign to letter
 		var letter = button.textContent;
-		//disable button pressed
 		button.disabled = true;
-		//if check letter returns true, call showMatchedLetter and add class chosen
 		if (this.activePhrase.checkLetter(letter)) {
 			this.activePhrase.showMatchedLetter(letter);
 			button.classList.add('chosen');
-			//if checkForWin method true, call gameOver method and game is won
 			if (this.checkForWin()) {
 				this.gameOver(true);
 			}
-			//if checkLetter method returns false, remove life and add class name wrong to button pressed
-			//if removeLife missed is not less than five, gameWon will be false, and game is lost
 		} else {
 			this.removeLife();
 			button.classList.add('wrong');
