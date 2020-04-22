@@ -42,11 +42,8 @@ class Game {
 		}
 		return sentinal;
 	};
-	/**
-	 * Increases the value of the missed property
-	 * Removes a life from the scoreboard
-	 * Checks if player has remaining lives and ends game if player is out
-	 */
+
+     // checks if player has lives left if not game is over && Removes a life from score
 	removeLife(letter) {
 		//increases missed by 1
 		this.missed += 1;
