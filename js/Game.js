@@ -42,12 +42,9 @@ class Game {
 		}
 		return sentinal;
 	};
-
      // checks if player has lives left if not game is over && Removes a life from score
 	removeLife(letter) {
-		//increases missed by 1
 		this.missed += 1;
-		//if missed is less than 5
 		if (this.missed < 5) {
 			let listItems = document.getElementsByClassName("tries");
 			console.log(listItems)
@@ -56,10 +53,7 @@ class Game {
 			this.gameOver(false);
 		}
 	};
-	// /**
-	//* Displays game over message
-	//* @param {boolean} gameWon - Whether or not the user won the game
-	//*/
+	// Displays a message when game is Over
 	gameOver(gameWon) {
 		//variable messageElement targets h1 html element
 		var messageElement = document.getElementById("game-over-message");
